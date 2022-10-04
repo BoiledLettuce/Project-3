@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import moment from 'moment';
 import { useParams, useHistory } from 'react-router-dom';
 
+
+
+import CommentSection from './CommentSection';
 import { getPost, getPostBySearch } from '../../actions/posts';
 import useStyles from './styles';
 
@@ -56,7 +59,13 @@ const PostDetails = () => {
           <Divider style={{ margin: '20px 0' }} />
           <Typography variant="body1"><strong>CHAT DERN SURE SOON</strong></Typography>
           <Divider style={{ margin: '20px 0' }} />
-          <Typography variant="body1"><strong>COMMENT DERN SURE SOON</strong></Typography>
+
+{/* COMMENT SECTION NEW */}
+
+          <CommentSection post={post} />
+
+{/* COMMENT SECTION NEW */}
+
           <Divider style={{ margin: '20px 0' }} />
         </div>
         <div>
