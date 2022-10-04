@@ -7,7 +7,8 @@ export const signin = (formData, history) => async (dispatch) => {
 
         dispatch({ type: AUTH, data });
 
-        history.push('/');
+        history.push('/auth');
+        // history.push('/');
     } catch (error) {
         console.log(error);
     }

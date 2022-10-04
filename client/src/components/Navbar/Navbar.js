@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
 import creatures_logo from '../../images/Creatures_logo.png';
-import mamorys from '../../images/mamorys.png';
+// import mamorys from '../../images/mamorys.png';
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
